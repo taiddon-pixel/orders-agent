@@ -1,0 +1,26 @@
+openapi: 3.0.3
+info: { title: Orders API, version: 1.0.0 }
+servers: [{ url: http://localhost:4000 }]
+paths:
+  /orders/{id}:
+    get:
+      parameters: [{ name: id, in: path, required: true, schema: { type: string } }]
+      responses:
+        "200": { description: OK }
+        "404": { description: Not Found }
+  /orders/{id}/tracking:
+    get:
+      parameters: [{ name: id, in: path, required: true, schema: { type: string } }]
+      responses:
+        "200": { description: OK }
+        "404": { description: Not Found }
+  /orders/{id}/cancel:
+    post:
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        "200": { description: Cancelled }
+        "403": { description: Ineligible }
+        "409": { description: Already finalized }
+        "404": { description: Not Found }
+

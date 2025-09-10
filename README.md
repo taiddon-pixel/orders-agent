@@ -1,0 +1,1 @@
+An MCP server that runs queries over a node server, controlled by an AI chatbot. What could go wrong?
