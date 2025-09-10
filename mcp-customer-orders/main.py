@@ -1,5 +1,5 @@
 def main():
-    print("Hello from customer-orders!")
+    print("Hello from mcp-customer-orders!")
 
 
 if __name__ == "__main__":

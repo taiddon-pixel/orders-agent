@@ -1,0 +1,5 @@
+mcp:
+  servers:
+    orders-mcp:
+      command: uv
+      args: ["run", "python", "../mcp-customer-orders/server.py"]

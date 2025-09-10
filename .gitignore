@@ -1,0 +1,18 @@
+# Node
+orders-api/node_modules
+orders-api/dist
+orders-api/.env
+
+# Python
+mcp-customer-orders/.venv
+mcp-customer-orders/.env
+__pycache__/
+*.pyc
+
+# Agent
+agent/.env
+agent/.venv
+
+# General
+.DS_Store
+.env
