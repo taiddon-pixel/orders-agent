@@ -18,6 +18,8 @@ api_key=os.getenv("OPENAI_API_KEY")
 
 client = OpenAI()
 
+os.makedirs('logs', exist_ok=True)
+
 default_instructions = """
 You are an assistant that helps with tracking and canceling orders.
 Always:
